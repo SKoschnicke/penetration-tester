@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# this file holds configuration variables for the shell scripts used in this project
+
+# how the docker image should be named which is used to run the script in
+DOCKER_IMAGE_NAME=ruby-with-nmap
+
+# (host-)name of the server to deploy to (ssh access needed)
+DEPLOY_TO_SERVER=example-server

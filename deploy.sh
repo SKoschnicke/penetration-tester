@@ -1,11 +1,15 @@
 #!/bin/sh
 
-IMAGE_NAME=ruby-with-nmap
+# This script exports the build docker image and imports it on the
+# server to be used there.
+
+source ./config.sh
+
+# temporarly archive name for export
 ARCHIVE_FILE=penetration_tester_image.tar
-TARGET_SERVER=database-perfavo
 
 rm "$ARCHIVE_FILE"
-docker build -t "$IMAGE_NAME" .
-docker save "$IMAGE_NAME" > "$ARCHIVE_FILE"
-scp "$ARCHIVE_FILE" "$TARGET_SERVER":.
-ssh "$TARGET_SERVER" "docker load < \"$ARCHIVE_FILE\""
+docker build -t "$DOCKER_IMAGE_NAME" .
+docker save "$DOCKER_IMAGE_NAME" > "$ARCHIVE_FILE"
+scp "$ARCHIVE_FILE" "$DEPLOY_TO_SERVER":.
+ssh "$DEPLOY_TO_SERVER" "docker load < \"$ARCHIVE_FILE\""
