@@ -1,0 +1,22 @@
+* What it does
+
+This little program uses ~nmap~ to scan hosts for open ports and
+compares the ports found open with a list of allowed open ports. If
+there are ports found open which are not in the lost of allowed open
+ports, it sends a mail.
+
+It is useful when run periodically against your servers to check if
+the firewalls are still configured properly.
+
+* Quickstart
+
+You need [[https://docker.io][Docker]] installed.
+
+- Clone the repository.
+- Create a ~config.rb~ and a ~config.sh~ (use the included ~.example~
+  files as a template).
+- Build the container with ~./build-container.sh~
+- Start the program with ~./start.sh~
+
+There is also a ~deploy.sh~ script which can be used to put the
+finished program onto a server.
