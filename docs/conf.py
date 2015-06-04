@@ -34,6 +34,9 @@ extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
+    'sphinxcontrib.nwdiag',
+    'sphinxcontrib.rackdiag',
+    'sphinxcontrib.packetdiag'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -119,7 +122,7 @@ if on_rtd:
     html_theme = 'default'
 else:
     # theme to use locally
-    html_theme = 'alabaster'
+    html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
