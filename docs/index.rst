@@ -66,7 +66,7 @@ Contribute
 Support
 -------
 
-If you find bugs, please report them in the `issue iracker
+If you find bugs, please report them in the `issue tracker
 <https://www.github.com/SKoschnicke/penetration-tester/issues>`_. You
 may also reach me by email: s.koschnicke@gfxpro.com
 
