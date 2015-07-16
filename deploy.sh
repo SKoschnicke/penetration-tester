@@ -3,7 +3,7 @@
 # This script exports the build docker image and imports it on the
 # server to be used there.
 
-source ./config.sh
+source ./build-config.sh
 
 # temporarly archive name for export
 ARCHIVE_FILE=penetration_tester_image.tar

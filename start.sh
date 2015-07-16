@@ -8,7 +8,7 @@
 
 set -eux
 
-source ./config.sh
+source ./build-config.sh
 
 docker run -it \
   -e BUNDLE_PATH=/usr/src/app/.bundle \

@@ -1,5 +1,5 @@
 /.bundle/
-/config.rb
+/penetration-tester-config.rb
 /scan.xml
-/config.sh
+/build-config.sh
 /docs/_build_html

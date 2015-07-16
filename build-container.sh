@@ -4,6 +4,6 @@
 # is copied into the container so that the image can be used
 # standalone to start the program.
 
-source ./config.sh
+source ./build-config.sh
 
 docker build -t "$DOCKER_IMAGE_NAME" .

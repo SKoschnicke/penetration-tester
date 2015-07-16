@@ -4,8 +4,8 @@ Quickstart
 You need `Docker <https://docker.io/>`_ installed.
 
 #. Clone the repository.
-#. Create a ``config.rb`` and a ``config.sh`` (use the included
-   ``.example`` files as a template).
+#. Create a ``penetration-tester-config.rb`` and a ``build-config.sh``
+   (use the included ``.example`` files as a template).
 #. Build the container with ``./build-container.sh``
 #. Start the program with ``./start.sh``
 
